@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="image-container">
+        </div>
+        <div class="form-container">
+            <img src="./icon/vector-fitness-badge-and-logo-good-for-print-design.jpg" class="logo">
+            <h1>Đăng Nhập</h1>
+            <form action="" id="loginForm" method="post">
+                <label for="username">Tên tài khoản</label>
+                <input type="text" name="username" placeholder="username" id="username" required>
+                <label for="password">Mật khẩu</label>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+                <input type="submit" value="Đăng nhập">
+                <input type="button" value="Đăng ký" onclick="register()">
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="./register.css">
+</head>
+
+<body>
+    <div class="body">
+        <form action="" id="registerForm" method="post">
+           <div class="form_register">
+                <div class="img">
+                </div>
+                
+                <div class="form">
+                    <img src="./icon/vector-fitness-badge-and-logo-good-for-print-design.jpg" class="logo">
+                    <h1>Đăng ký</h1>
+                    <label for="username">Tên tài khoản</label>
+                    <input type="text" name="username" id="username">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" name="password" id="password">
+                    <label for="passwordConfirmation">Xác nhận mật khẩu</label>
+                    <input type="password" name="passwordConfirmation" id="passwordConfirmation">
+                    <label for="fullname">Họ tên</label>
+                    <input type="text" name="fullname" id="fullname">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" name="phone" id="phone">
+                    <input type="submit" value="Đăng ký">
+                    <input type="button" value="Đăng nhập" onclick="login()">
+                </div>
+           </div>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>

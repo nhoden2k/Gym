@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container,
+.form-container {
+  width: 50%;
+}
+
+.image-container {
+    background-image: url('https://th.bing.com/th/id/R.c3e85b6f605133212f626be8c3bb4502?rik=gaYYZ3OCBhcsAA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-DxrqBX4rFbQ%2fTpmUniLtVkI%2fAAAAAAAADKY%2ffZEWH7oGtQ8%2fs1600%2fGym-16.jpg&ehk=h9Mjby8X8AfOlf0IsiyTnQGUt5Fjsot4Kqw8DNwMrpA%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 100px;
+  width: 200px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.form-container input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.form-container input:focus {
+  background: rgb(184, 181, 181);
+}
+
+.form-container input[type='submit'],
+.form-container input[type='button'] {
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form-container input[type='submit']:hover,
+.form-container input[type='button']:hover {
+  background: darkblue;
+}
