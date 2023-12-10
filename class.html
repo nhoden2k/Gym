@@ -13,7 +13,10 @@
 
 <body>
     <div class="header">
-        <div class="logo" ><img src="icon/vector-fitness-badge-and-logo-good-for-print-design.jpg" style="width: 100%; ; height: 100%; margin-left: 20px;" ></div>
+       <div class="logo-des">
+            <div class="logo" ><img src="/Gym/icon/gym_icon2.jpg" style="width: 100%; ; height: 100%; margin-left: 20px;" ></div>
+            <div class="des">Gym Power</div>
+       </div>
         <div class="containerMenu" >
             <nav id="sidebar">
                 <ul class="list-items">
@@ -33,12 +36,10 @@
             <div class="dropdown">
                 <div class="users">
                     <p><i class='fas fa-user-alt'></i></p>
-                    <span id="userfullname"></span>
+                        <a href="./login.html" class="log-out"><i class='fas fa-arrow-right'></i></a>
+                    </div>
                 </div>
 
-                <div class="dropdown-content">
-                    <a href="./login.html" class="log-out">Đăng xuất</a>
-                </div>
             </div>
         </div>
     </div>
@@ -46,11 +47,12 @@
     <div class="body" >
         <div class="body1">
             <h1>Danh Sách lớp học</h1>
-            <button id="modalBtn" class="button">Thêm+</button>            
         </div>
-        <div class="body2">
-        <input type="text" id="search-bar" onchange="search()" placeholder="Search ...">
+        <div class="func">
+            <button id="modalBtn" class="button">Thêm</button>            
+            <input type="text" id="search-bar" onchange="search()" placeholder="Search ...">
         </div>
+     
 
         <div class="containter">
     <div id="my-modal" class="modal">

@@ -25,8 +25,6 @@ const searchInput = document.querySelector("#search-bar");
 
 const sort = document.querySelector(".sorting");
 const sortName = document.querySelector(".sorting-name");
-const userFullname = document.querySelector("#userfullname");
-userFullname.innerHTML = fullname;
 
 modalBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);

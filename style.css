@@ -15,6 +15,7 @@ body{
   color:  white;
   position: sticky;
   top: 0px;
+  height: 110px;
 }
 
 .containerMenu span {
@@ -44,11 +45,13 @@ body{
 }
 
 .list-items i {
+  font-size: 18px;
   display: block;
   text-align: -webkit-center;
   margin-bottom: 6px;
 }
 .list-items a {
+  font-size: 18px;
   white-space: nowrap;
 }
 
@@ -67,21 +70,25 @@ body{
   height: 70px;
   width: 150px;
 }
-.containerMenu{
-  height: 70px;
-  width: 80vw;
-  flex-direction: row;
-  align-items: center;
-  display: flex  ;
+
+
+.logo-des{
+  display: flex;
+  text-align: center;
+  border: solid 2px;
+  margin-left: 20px
 }
 
+.des{
+  width: 100px;
+    line-height: 70px;
+}
 .Topic-title{
   margin: 20px;
 }
 .dropdown {
   float: left;
   overflow: hidden;
-  background-color: #e60303;
 }
 
 .dropdown #userfullname {
@@ -166,23 +173,20 @@ margin-bottom: 50px;
 #modalBtn {
   display: flex;
   justify-content: center;
-  background: blue;
+  background: #0086a8 ;
   border: none;
   padding: 10px 20px;
-  border-radius: 20px;
   cursor: pointer;
   color: #fff;
   margin: 10px;
-  width: 100px;
-  float: right;
+  width: 200px;
+  float: left;
 }
 
 .button {
   background: #428bca;
   padding: 1em 2em;
   color: #fff;
-  border: 0;
-  border-radius: 5px;
   cursor: pointer;
   margin: 20px;
 }
@@ -222,11 +226,12 @@ margin-bottom: 50px;
   background-image: url('https://www.w3schools.com/css/searchicon.png');
   background-position: 10px;
   background-repeat: no-repeat;
-  width: 10%;
+  width: 20%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+  float: right;
 }
 
 #search-option {
@@ -401,3 +406,22 @@ border: 1px solid black; /* Add a grey border */
 margin-bottom: 12px; /* Add some space below the input */
 }
 
+.containerMenu {
+    height: 70px;
+    width: 80vw;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin-left: 120px;
+}
+
+.logout-staff{
+  position: absolute;
+  right: 20px;
+}
+.users a i{
+  width: 40px;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+}
