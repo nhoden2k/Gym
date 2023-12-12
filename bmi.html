@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Khách Hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="slidebar.css">
+    <style>
+        #bmiForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto; /* Đặt chiều cao thành auto để nó có thể điều chỉnh tự động theo nội dung */
+    }
+
+    .body1 {
+        text-align: center; /* Căn giữa văn bản */
+        display: block;
+    }
+
+    .cannang,
+    .chieucao {
+        font-size: 22px;
+        margin-bottom: 10px; /* Tạo khoảng cách dưới các label */
+        display: block; /* Đặt thành block để xuống dòng */
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .img-bmi img{
+        display: block;
+        margin: auto;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo-des">
+            <div class="logo" ><img src="/Gym/icon/gym_icon2.jpg" style="width: 100%; ; height: 100%; margin-left: 20px;" ></div>
+            <div class="des">Gym Power</div>
+       </div>
+        <div class="containerMenu" >
+            <nav id="sidebar">
+                <ul class="list-items">
+                   <li><a href="#">
+                    <i class="fas fa-home"></i>
+                    Trang chủ</a></li>
+                   <li><a href="staff.html" ><i class='fas fa-user-edit'></i></i>Nhân viên</a></li>
+                   <li><a href="customer.html" ><i class="fas fa-user"></i>Khách Hàng</a></li>
+                   <li><a href="class.html"><i class="far fa-calendar-alt"></i>Lớp Học</a></li>
+                   <li><a href="bmi.html"><i class="fas fa-comment-dots"></i>Tính BMI</a></li>
+                   <li><a href="#"><i class="fas fa-bell"></i>Thông Báo</a></li>
+                </ul>
+             </nav>
+            
+        </div>
+        <div class="logout-staff">
+            <div class="dropdown">
+                <div class="users">
+                    <p><i class='fas fa-user-alt'></i></p>
+                        <a href="./login.html" class="log-out"><i class='fas fa-arrow-right'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="body1 ">
+            <h1>TÍNH BMI</h1>
+
+            <!-- BMI Calculator Form -->
+            <form id="bmiForm">
+                <div class="cannang">
+                    <label for="weight">Cân nặng (kg): </label>
+                    <input type="number" id="weight" required><br>
+                </div>
+
+                <div class="chieucao">
+                    <label for="height">Chiều cao (m): </label>
+                    <input type="number" id="height" step="0.01" required><br>
+                </div>
+
+                <button type="button" onclick="calculateBMI()">Tính BMI</button>
+
+                <div id="result"></div>
+            </form>
+        </div>
+    </div>
+    <div class="img-bmi">
+        <img src="./icon/BMI.png" alt="">
+    </div>
+
+    <script src="script1.js"></script>
+    <script>
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+
+            if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                alert('Vui lòng nhập cân nặng và chiều cao hợp lệ.');
+                return;
+            }
+
+            const bmi = weight / (height * height);
+
+            const resultElement = document.getElementById('result');
+            resultElement.innerHTML = `BMI của bạn là: ${bmi.toFixed(2)}`;
+        }
+    </script>
+</body>
+
+</html>

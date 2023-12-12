@@ -8,6 +8,10 @@ const fullNameInput = document.querySelector("#fullname");
 const emailInput = document.querySelector("#email");
 const phoneInput = document.querySelector("#phone");
 
+function validateUsername(username) {
+  return username.length >= 6;
+}
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const username = usernameInput.value;
@@ -20,6 +24,12 @@ form.addEventListener("submit", (e) => {
   // Kiểm tra xác nhận mật khẩu
   if (password !== passwordConfirmation) {
     alert("Xác nhận mật khẩu không trùng khớp. Vui lòng kiểm tra lại.");
+    return;
+  }
+
+  const isUsernameValid = validateUsername(username);
+  if (!isUsernameValid) {
+    alert("User name phải có ít nhất 6 ký tự.");
     return;
   }
 
