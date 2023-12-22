@@ -120,7 +120,7 @@ function search() {
     });
 
     btnDelete.innerHTML =
-      "<img src='./icon/bin.png' width='15px' height='15px'>";
+      "<img src='./icon/bin.jpg' width='15px' height='15px'>";
     btnDelete.addEventListener("click", function () {
       deleteFunction(staff.id);
     });

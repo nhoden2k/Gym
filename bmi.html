@@ -122,6 +122,16 @@
                 return;
             }
 
+            if (weight > 200) {
+                alert('Cân nặng quá lớn. Vui lòng nhập giá trị dưới 200kg.');
+                return;
+            }
+
+            if (height > 3) {
+                alert('Chiều cao quá lớn. Vui lòng nhập giá trị dưới 3m.');
+                return;
+            }
+
             const bmi = weight / (height * height);
 
             const resultElement = document.getElementById('result');
